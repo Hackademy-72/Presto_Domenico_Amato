@@ -25,6 +25,101 @@ h1, h2, h3, .h1, .h2, .h3{
 
 }
 
+.textPrimaryC{
+
+    color: var(--primary);
+}
+
+.textSecondaryC{
+
+    color: var(--secondary);
+}
+
+.textaccentC{
+
+    color: var(--accent);
+}
+
+.textGreyC{
+
+    color: var(--greyCustom);
+}
+
+.bgGreyC{
+
+    background-color: var(--greyCustom);
+}
+
+body{
+
+    background-color: rgba(170, 163, 163, 0.168);
+}
+
+/* CUSTOM NAVBAR */
+
+.nav-custom{
+
+    background-color: var(--greyCustom);
+}
+
+.btn-custom{
+
+    border: 3px solid var(--accent);
+    border-radius: 10px;
+    background-color: var(--accent);
+    color: var(--primary);
+    transition: 0.5s;
+}
+
+.btn-custom:hover{
+
+    background-color: var(--greyCustom);
+    color: var(--primary);
+}
+
+.ul-navbar-custom li {
+
+    font-size:x-large;
+}
+
+.logoA-custom{
+
+    height: 60px;
+    width: 80px;
+}
+
+.bg-button-custom{
+
+    background-color: var(--accent);
+}
+
+#iconaNav{
+
+    transition: 0.6s;
+}
+
+#navbarMain{
+
+    transition: 0.5s;
+    height: 70px;
+}
+/* HEADER */
+
+.header-custom{
+
+    background-image:linear-gradient(rgba(206, 202, 201, 0.76),rgba(173, 174, 177, 0.442)), url(./media/header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* SEZIONE AOS */
+
+.incrementatoreNumeri{
+
+    font-size: xx-large;
+    font-weight: bold;
+}
 
 
 
