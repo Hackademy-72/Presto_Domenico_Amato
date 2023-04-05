@@ -1,0 +1,32 @@
+
+/* font */
+
+*{
+    font-family: 'Inconsolata', monospace;
+
+}
+
+h1, h2, h3, .h1, .h2, .h3{
+
+    font-family: 'Rajdhani', sans-serif;
+}
+
+
+/* colori principali */
+:root{
+    
+    --primary: rgb(92,92,94);
+    
+    --secondary: rgb(173,174,177);
+    
+    --accent : rgb(206,202,201);
+    
+    --greyCustom : rgb(232,232,232);
+
+}
+
+
+
+
+
+
