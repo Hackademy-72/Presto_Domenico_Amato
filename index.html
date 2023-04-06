@@ -17,6 +17,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Rajdhani:wght@500&display=swap" rel="stylesheet">
 
+        <!-- SWIPER CDN -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
         <!-- CSS AOS ANIMATIONS -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         
@@ -45,7 +48,7 @@
           
           <button class="navbar-toggler bg-button-custom textPrimaryC" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             
-            <i class="fa-solid fa-arrow-down fa-2x" id="iconaNav"></i>
+            <i class="fa-solid fa-arrow-down" id="iconaNav"></i>
           
         </button>
           
@@ -103,6 +106,8 @@
 
       <!-- FINE HEADER -->
 
+     
+     
       <!-- INIZIO SESSIONE CON AOS -->
 
       <section class="container">
@@ -111,7 +116,7 @@
 
             <div class="col-12 col-md 6">
 
-                <img data-aos="fade-right" data-aos-duration="1500" src="./media/pacchi.png" alt="immagine pacchi">
+                <img class="img-fluid" data-aos="fade-right" data-aos-duration="1500" src="./media/pacchi.png" alt="immagine pacchi">
 
             </div>
 
@@ -133,6 +138,192 @@
       </section>
 
       <!-- FINE SEZIONE CON AOS -->
+
+      
+      
+      <!-- INIZIO SEZIONE SWIPER -->
+
+      <section class="container">
+
+        <div class="row justify-content-center">
+
+          <h2 class="text-center textPrimaryC">Quello che i clienti dicono di noi</h2>
+
+          <div class="col-12 col-md-8">
+
+                <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper ">
+                <!-- Slides -->
+                
+                
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <!-- <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div> -->
+
+              <!-- If we need scrollbar -->
+              <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+
+
+          </div>
+
+        </div>
+        
+      </section>
+
+      <!-- FINE SEZIONE SWIPER -->
+  
+      
+      
+      <!-- INIZIO SEZIONE MOUSE -->
+
+      <section class="container-fluid bgGreyC">
+
+        <div class="container">
+
+          <div class="row mt-5 justify-content-between">
+
+            <div class="col-12 col-md-3 mouse-custom my-2">
+
+              <i class="fa-solid fa-truck-fast fa-2x mt-3 textPrimaryC"></i>
+
+              <h3>Spedizioni</h3>
+
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non similique magnam nostrum quis itaque blanditiis quidem numquam incidunt eos </p>
+
+            </div>
+
+            <div class="col-12 col-md-3 mouse-custom my-2">
+
+              <i class="fa-solid fa-person fa-2x mt-3 textPrimaryC"></i>
+
+              <h3>Servizio Clienti</h3>
+
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non similique magnam nostrum quis itaque blanditiis quidem numquam incidunt eos </p>
+
+            </div>
+
+            <div class="col-12 col-md-3 mouse-custom my-2">
+
+              <i class="fa-solid fa-wallet fa-2x mt-3 textPrimaryC"></i>
+
+              <h3>Vendite</h3>
+
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non similique magnam nostrum quis itaque blanditiis quidem numquam incidunt eos </p>
+
+            </div>
+
+
+
+
+          </div>
+
+
+        </div>
+
+
+
+      </section>
+
+      <!-- FINE SEZIONE MOUSE -->
+
+
+      <!-- INIZIO FOOTER -->
+
+        
+              <footer class="text-center text-lg-start text-muted">
+                <!-- Section: Social media -->
+                <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                  <!-- Left -->
+                  <div class="me-5 d-none d-lg-block">
+                    <span>I nostri social:</span>
+                  </div>
+                  <!-- Left -->
+
+                  <!-- Right -->
+                  <div>
+                    <a href="" class="me-4 link-secondary">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                      <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                  <!-- Right -->
+                </section>
+                <!-- Section: Social media -->
+
+                <!-- Section: Links  -->
+                <section class="">
+                  <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                      <!-- Grid column -->
+                      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                          <i class="fas fa-gem me-3 text-secondary"></i>Company name
+                        </h6>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate natus in eius autem incidunt animi sed cumque voluptate ut velit.
+                        </p>
+                      </div>
+                      <!-- Grid column -->
+
+                      <!-- Grid column -->
+                      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
+                        <p>
+                          <i class="fas fa-envelope me-3 text-secondary"></i>
+                          info@example.com
+                        </p>
+                        <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+                        <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+                      </div>
+                      <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                  </div>
+                </section>
+                <!-- Section: Links  -->
+
+                <!-- Copyright -->
+                <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+                  © 2021 Copyright:
+                  <a class="text-reset fw-bold" href="https://mdbootstrap.com/">presto.it</a>
+                </div>
+                <!-- Copyright -->
+              </footer>
+              
+      
+      <!-- FINE FOOTER -->
+
+                 
+
+
+
+
+      
     
     
     
@@ -143,13 +334,23 @@
     <!-- SCRIPT JS BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
-    <!-- JS AOS -->
+    <!-- SCRIPT JS AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+    
+    <!-- INIZIALIZZAZIONE AOS -->
     <script>
         AOS.init();
     </script>
   
+    <!-- SCRIPT SWIPER CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- SCRIPT ESTERNO SWIPER CUSTOM -->
+    <script src="./swiper.js"></script>
+
+
+  
+
     <!-- SCRIPT JS CUSTOM -->
     <script defer src="./main.js"></script>
 

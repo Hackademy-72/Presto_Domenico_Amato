@@ -50,7 +50,7 @@ h1, h2, h3, .h1, .h2, .h3{
     background-color: var(--greyCustom);
 }
 
-body{
+body , footer{
 
     background-color: rgba(170, 163, 163, 0.168);
 }
@@ -101,7 +101,7 @@ body{
 #navbarMain{
 
     transition: 0.5s;
-    height: 70px;
+    
 }
 /* HEADER */
 
@@ -113,6 +113,7 @@ body{
     background-attachment: fixed;
 }
 
+
 /* SEZIONE AOS */
 
 .incrementatoreNumeri{
@@ -121,6 +122,58 @@ body{
     font-weight: bold;
 }
 
+/* SEZIONE SWIPER */
+
+.swiper{
+
+    
+    height: 400px;
+    
+}
+
+.img-custom-wrapper{
+
+    width: 100px;
+    height: 100px;
+
+}
+
+.card-custom{
+
+    width: 450px;
+    height: 250px;
+    border: 2px solid var(--greyCustom);
+    border-radius: 20px;
+    padding: 10px;
+    background-color: var(--greyCustom);
+}
+
+/* SEZIONE MOUSE */
+
+.mouse-custom{
+
+    border: 3px solid var(--secondary);
+    border-radius: 20px;
+    transition: 0.5s;
+
+}
+
+.mouse-custom:hover{
+
+    background-color: var(--greyCustom);
+    color: var(--accent);
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 900px) {
+
+    .mouse-custom:hover{
+
+        transform: scale(0.9);
+    
+    }
+    
+}
 
 
 

@@ -47,7 +47,7 @@ window.addEventListener(`scroll`, ()=>{
         navbarMain.classList.add(`bgGreyC`);
 
         
-        navbarMain.style.height = `100px`;
+        navbarMain.style.padding = (`20px , 0px`);
         
         logoA.classList.add(`d-none`);
         logoB.classList.remove(`d-none`);
@@ -57,7 +57,7 @@ window.addEventListener(`scroll`, ()=>{
         navbarMain.classList.remove(`bgGreyC`);
         navbarMain.classList.add(`bg-transparent`);
 
-        navbarMain.style.height = `70px`;
+        navbarMain.style.padding = (`10px , 0px`);
 
         logoA.classList.remove(`d-none`);
         logoB.classList.add(`d-none`);
@@ -81,20 +81,20 @@ function intervalli(finalNumber, element){
 
     let range = setInterval(() => {
 
+        if(counter < finalNumber){
+ 
+         counter++;
+ 
+         element.innerHTML = counter;
+ 
+        } else {
+ 
+         clearInterval(range);
         
-
-       if(counter < finalNumber){
-
-        counter++;
-
-        element.innerHTML = counter;
-
-       } else {
-
-        clearInterval(range);
-
-       }
+        }
+        
     },1)
+    
 }
 
 
@@ -117,6 +117,63 @@ let observer = new IntersectionObserver((entries) =>{
 })
 
 observer.observe(primoSpan);
+
+
+// CATTURO I LOGHI E LE CARD DELLA SEZIONE MOUSE
+
+let faSolid = document.querySelectorAll(`.fa-solid`);
+
+let mouseCustom = document.querySelectorAll(`.mouse-custom`);
+
+columnsConfirm = false;
+
+mouseCustom.forEach( (card , i) => {
+
+    card.addEventListener(`mouseenter`, ()=>{
+
+        if(columnsConfirm == false){
+
+            faSolid[i].classList.remove('textPrimaryC');
+
+            faSolid[i].classList.add('textGreyC');
+
+        
+        } else {
+
+               
+               faSolid[i].classList.remove('textSecondaryC'); 
+
+         }
+                
+        })
+
+    
+    card.addEventListener('mouseleave', ()=>{
+
+
+        if(columnsConfirm == false){
+
+            faSolid[i].classList.remove('textaccentC');
+            faSolid[i].classList.add('textSecondaryC');
+
+            columnsConfirm = true;
+
+        } else {
+
+             
+            
+            faSolid[i].classList.add('textSecondaryC');
+
+            columnsConfirm = false;
+
+        }
+
+    })
+
+
+});
+
+
 
 
 
