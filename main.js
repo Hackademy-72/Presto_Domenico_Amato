@@ -121,7 +121,7 @@ observer.observe(primoSpan);
 
 // CATTURO I LOGHI E LE CARD DELLA SEZIONE MOUSE
 
-let faSolid = document.querySelectorAll(`.fa-solid`);
+let iconaMouseCustom = document.querySelectorAll(`.iconaMouseCustom`);
 
 let mouseCustom = document.querySelectorAll(`.mouse-custom`);
 
@@ -133,15 +133,15 @@ mouseCustom.forEach( (card , i) => {
 
         if(columnsConfirm == false){
 
-            faSolid[i].classList.remove('textPrimaryC');
+            iconaMouseCustom[i].classList.remove('textPrimaryC');
 
-            faSolid[i].classList.add('textGreyC');
+            iconaMouseCustom[i].classList.add('textGreyC');
 
         
         } else {
 
                
-               faSolid[i].classList.remove('textSecondaryC'); 
+               iconaMouseCustom[i].classList.remove('textSecondaryC'); 
 
          }
                 
@@ -153,8 +153,8 @@ mouseCustom.forEach( (card , i) => {
 
         if(columnsConfirm == false){
 
-            faSolid[i].classList.remove('textaccentC');
-            faSolid[i].classList.add('textSecondaryC');
+            iconaMouseCustom[i].classList.remove('textGreyC');
+            iconaMouseCustom[i].classList.add('textSecondaryC');
 
             columnsConfirm = true;
 
@@ -162,7 +162,7 @@ mouseCustom.forEach( (card , i) => {
 
              
             
-            faSolid[i].classList.add('textSecondaryC');
+            iconaMouseCustom[i].classList.add('textPrimaryC');
 
             columnsConfirm = false;
 

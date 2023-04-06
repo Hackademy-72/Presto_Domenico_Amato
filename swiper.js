@@ -1,7 +1,7 @@
 
 let recensioni = [
 
-    // {name : `Domenico A.`, review: `Sito bellissimo e ben strutturato!` , vote : 4},
+    {name : `Domenico A.`, review: `Sito bellissimo e ben strutturato!` , vote : 4},
     
     {name : `Mario R.`, review: `Ottimi prodotti!` , vote : 5},
     
@@ -29,14 +29,14 @@ recensioni.forEach((recensione) =>{
 
             <div class="col-6 text-center">
 
-                <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t1.jpg" alt="wrapkit"
+                <img src="./media/omino.png" alt="wrapkit"
                 class="img-fluid rounded-circle img-custom-wrapper" />
 
             </div>
 
             <div class="col-6 mt-3">
 
-                <h3 class="textPrimaryC">${recensione.name}<i class="fa-solid fa-circle-check textPrimaryC"></i> </h3>
+                <h3 class="textPrimaryC">${recensione.name} <i class="fa-solid fa-circle-check textPrimaryC"></i> </h3>
 
                 <div>
                 

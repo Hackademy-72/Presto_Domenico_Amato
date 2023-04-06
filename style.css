@@ -160,7 +160,7 @@ body , footer{
 
 .mouse-custom:hover{
 
-    background-color: var(--greyCustom);
+    background-color: black;
     color: var(--accent);
     transform: scale(1.1);
 }
@@ -175,6 +175,8 @@ body , footer{
     
 }
 
+
+    
 
 
 
