@@ -57,7 +57,7 @@
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3 ul-navbar-custom">
               
               <li class="nav-itemP">
-                <a class="nav-link textPrimaryC " aria-current="page" href="#">Home</a>
+                <a class="nav-link textPrimaryC " aria-current="page" href="./index.html">Home</a>
               </li>
               
               <li class="nav-item">
@@ -95,7 +95,7 @@
             <div class="col-12">
 
 
-                <h1 data-aos="flip-right" class="display-1 textGreyC bold" >Presto.it</h1>
+                <h1 data-aos="flip-right" class="display-1 textGreyC bold" >ANNUNCI</h1>
 
                
 
@@ -108,134 +108,130 @@
 
       <!-- FINE HEADER -->
 
-     
-     
-      <!-- INIZIO SESSIONE CON AOS -->
 
-      <section class="container">
+      <!-- INIZIO SECTION ANNUNCI -->
 
-        <div class="row mt-5">
+      <section class="container-fluid">
 
-            <div class="col-12 col-md 6">
+        <div class="row my-5">
 
-                <img class="img-fluid" data-aos="fade-right" data-aos-duration="1500" src="./media/pacchi.png" alt="immagine pacchi">
+            <h2>Filtra per:</h2>
 
-            </div>
+            <div class="col-12 col-md-3">
 
-            <div class="col-12 col-md 6">
+                <div class="accordion" id="accordionExample">
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button collapsed fs-3 bgGreyC" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Categoria
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                          
+                          <!--FILTRO PER CATEGORIA-->
 
-                <h2 class="text-end">Le nostre statistiche</h2>
+                          <div class="accordion-body" id="categoriaWrapper">
 
-                <p class="text-end"><span id="primoSpan" class="incrementatoreNumeri d-block">0</span> Clienti soddisfatti</p>
-                
-                <p class="text-end"><span id="secondoSpan" class="incrementatoreNumeri d-block">0</span> Prodotti venduti</p>
+                            <div class="form-check">
+                                
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="all" checked>
+                                <label class="form-check-label" for="all">
+                                  Tutte le categorie
+                               
+                                </label>
 
-                <p class="text-end"><span id="terzoSpan" class="incrementatoreNumeri d-block">0</span> Recensioni</p>
-
-
-            </div>
-
-        </div>
-
-      </section>
-
-      <!-- FINE SEZIONE CON AOS -->
-
-      
-      
-      <!-- INIZIO SEZIONE SWIPER -->
-
-      <section class="container">
-
-        <div class="row justify-content-center">
-
-          <h2 class="text-center textPrimaryC">Quello che i clienti dicono di noi</h2>
-
-          <div class="col-12 col-md-8">
-
-                <!-- Slider main container -->
-            <div class="swiper">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper ">
-                <!-- Slides -->
-                
-                
-              </div>
-              <!-- If we need pagination -->
-              <div class="swiper-pagination"></div>
-
-              <!-- If we need navigation buttons -->
-              <!-- <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div> -->
-
-              <!-- If we need scrollbar -->
-              <!-- <div class="swiper-scrollbar"></div> -->
-            </div>
-
-
-          </div>
-
-        </div>
+                            </div>
         
-      </section>
-
-      <!-- FINE SEZIONE SWIPER -->
+                          </div>
+                        </div>
   
-      
-      
-      <!-- INIZIO SEZIONE MOUSE -->
+                      </div>
+  
+                    
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed fs-3 bgGreyC" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Prezzo
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
 
-      <section class="container-fluid bgGreyC">
+                            <div>
+                                <span class="inputNumber">
+                                    0 €
+                                </span>
+                                
+                             <input id="inputPrezzo" type="range" class="w-100">
 
-        <div class="container">
+                           
 
-          <div class="row mt-5 justify-content-between">
 
-            <div class="col-12 col-md-3 mouse-custom my-2">
+                                <span id="incrementNumber" class="inputNumber">
 
-              <i class="fa-solid fa-truck-fast fa-2x mt-3 textPrimaryC iconaMouseCustom"></i>
+                                    0
 
-              <h3>Spedizioni</h3>
+                                </span>
 
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non similique magnam nostrum quis itaque blanditiis quidem numquam incidunt eos </p>
+                                <span class="inputNumber"> €</span>
+                            
+                            </div>
+
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="accordion-item">
+                      
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed fs-3 bgGreyC" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Parola
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+
+                            <input id="InputWord" type="text" placeholder="cerca annuncio">
+                          
+                        </div>
+                      </div>
+
+                    </div>
+                  
+                </div>
+
 
             </div>
 
-            <div class="col-12 col-md-3 mouse-custom my-2">
+            <div class="col-12 col-md-9">
 
-              <i class="fa-solid fa-person fa-2x mt-3 textPrimaryC iconaMouseCustom"></i>
+                <div class="row" id="cardsWrapper">
 
-              <h3>Servizio Clienti</h3>
+                    
+                </div>
 
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non similique magnam nostrum quis itaque blanditiis quidem numquam incidunt eos </p>
-
+                    
             </div>
-
-            <div class="col-12 col-md-3 mouse-custom my-2">
-
-              <i class="fa-solid fa-wallet fa-2x mt-3 textPrimaryC iconaMouseCustom"></i>
-
-              <h3>Vendite</h3>
-
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non similique magnam nostrum quis itaque blanditiis quidem numquam incidunt eos </p>
-
-            </div>
-
-
-
-
-          </div>
-
 
         </div>
 
+     </section>
 
 
-      </section>
-
-      <!-- FINE SEZIONE MOUSE -->
 
 
+
+
+        
+
+
+
+
+
+      <!-- FINE SECTION ANNUNCI -->
+     
       <!-- INIZIO FOOTER -->
 
         
@@ -345,17 +341,9 @@
         AOS.init();
     </script>
   
-    <!-- SCRIPT SWIPER CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- SCRIPT ANNUNCI CUSTOM-->
 
-    <!-- SCRIPT ESTERNO SWIPER CUSTOM -->
-    <script src="./swiper.js"></script>
-
-
-  
-
-    <!-- SCRIPT JS CUSTOM -->
-    <script defer src="./main.js"></script>
+    <script src="./annunci.js"></script>
 
   </body>
 </html>

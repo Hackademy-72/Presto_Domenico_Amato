@@ -175,7 +175,20 @@ body , footer{
     
 }
 
+/* ANNUNCI */
 
+.annuncio-custom{
+
+    min-height: 250px;
+    border: 2px solid var(--primary);
+    border-radius: 15px;
+}
+
+.inputNumber{
+
+    color: var(--secondary);
+    font-size: 30px;
+}
     
 
 
