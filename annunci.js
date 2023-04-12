@@ -137,7 +137,7 @@ fetch(`./annunci.json`).then((Response) => Response.json() ).then((data) => {
 
         array.sort((a, b)=>Number(b.price - a.price));
 
-        array.forEach( (element) => {
+        array.forEach( (element, i) => {
 
         let div = document.createElement(`div`);
 
@@ -149,11 +149,13 @@ fetch(`./annunci.json`).then((Response) => Response.json() ).then((data) => {
                                 
                 <div class="annuncio-custom d-flex flex-column justify-content-evenly align-items-center">
 
+                    <img class="immagine-custom-card-annunci p-2" src="https://picsum.photos/${200+ i}" alt="">
+
                     <h2 class="fw-bold textPrimaryC">${element.name}</h2>
 
                     <p class="h3 textPrimaryC">${element.category}</p>
 
-                    <p class="h3 textPrimaryC">${element.price} $</p>
+                    <p class="h3 textPrimaryC">${element.price} €</p>
 
 
 
@@ -171,23 +173,38 @@ fetch(`./annunci.json`).then((Response) => Response.json() ).then((data) => {
     mostraCard(data);
 
 
+    
+
+
     // FUNZIONE PER MOSTRARE CARD TRAMITE CATEGORIA
 
-    function filtraPerCategoria(categoria){
+    
+    
+    function filtraPerCategoria(array){
+
+
+        let arrayDaNodeList = Array.from(radioButtons);
+    
+        let bottone = arrayDaNodeList.find((button)=> button.checked);
+    
+        let categoria = bottone.id;
+
+        // console.log(categoria);
         
         if(categoria != `all`){
 
-        let filtered = data.filter( (annuncio) => annuncio.category == categoria);
+       
+        let filtered = array.filter( (annuncio) => annuncio.category == categoria);
 
-        mostraCard(filtered);
+          return filtered;
 
         } else {
 
-            mostraCard(data);
+          return data;
+        
         }
 
     }
-
 
     // CATTURA RADIO BUTTONS
 
@@ -198,7 +215,7 @@ fetch(`./annunci.json`).then((Response) => Response.json() ).then((data) => {
 
     button.addEventListener(`click`, () =>{
 
-        filtraPerCategoria(button.id);
+        globalFilter();
 
 
     })
@@ -233,23 +250,24 @@ fetch(`./annunci.json`).then((Response) => Response.json() ).then((data) => {
 
      // funzione che filtra per prezzo
 
-     function filterbyPrice(prezzo){
+     function filterbyPrice(array){
 
-        let filtered = data.filter( (annuncio)=> annuncio.price <= prezzo );        
+        let filtered = array.filter( (annuncio)=> annuncio.price <= +(inputPrezzo.value));        
 
-        mostraCard(filtered);
+        return filtered;
 
      }    
 
-    
+     
+     inputPrezzo.addEventListener('input', ()=>{
+         
+         incrementNumber.innerHTML = inputPrezzo.value;
 
-        inputPrezzo.addEventListener('input', ()=>{
+         globalFilter();
+ 
+         
+     })        
 
-            filterbyPrice(inputPrezzo.value);
-    
-            incrementNumber.innerHTML = inputPrezzo.value;
-            
-        })        
      
      
     // funzione che filtra per parola 
@@ -257,25 +275,42 @@ fetch(`./annunci.json`).then((Response) => Response.json() ).then((data) => {
    
     // cattura word input per filtro per parola
 
-    let inputWord = document.querySelector('#inputWord');
+    let InputWord = document.querySelector('#InputWord');
 
+    
     // funzione filtra per parola
 
-    function filterbyWord(nome){
+    function filterbyWord(array){
 
-        let filtered = data.filter ( (annuncio)=> annuncio.name.toLowerCase().includes(nome.toLowerCase()) );
+        let nome = InputWord.value;
 
-        mostraCard(filtered);
+        let filtered = array.filter( (annuncio)=> annuncio.name.toLowerCase().includes(nome.toLowerCase()) );
+
+        return filtered;
 
     }
 
 
-    inputWord.addEventListener(`input`, ()=>{
+    InputWord.addEventListener(`input`, ()=>{
 
-        filterbyWord(inputWord.value);
+        globalFilter();
     })
 
+    
+    // FILTRO FINALE
 
+    function globalFilter(){
+    
+        let filteredByCategory = filtraPerCategoria(data);
+    
+        let filteredByPrice = filterbyPrice(filteredByCategory);
+    
+        let filteredByWord = filterbyWord(filteredByPrice);
+    
+        mostraCard(filteredByWord);
+    
+    
+    }
 
 })
 
