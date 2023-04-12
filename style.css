@@ -213,6 +213,17 @@ body , footer{
 
 }
 
+@media screen and (max-width: 900px) {
+
+   #circle-custom{
+
+    height: 300px;
+    width: 300px;
+
+   }
+    
+}
+
 .moved{
 
     height: 100px;
@@ -230,16 +241,26 @@ body , footer{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    
+}
 
+@media screen and (max-width: 900px) {
+
+        .moved{
+
+            height: 70px;
+            width: 70px;
+        }
 
 }
+
 
 #apertura-custom{
 
     height: 100px;
     width: 100px;
     border: 2px solid var(--accent);
-    border-radius: 60%;
+    border-radius: 50%;
     background-color: var(--secondary);
 
     display: flex;
@@ -254,6 +275,15 @@ body , footer{
 
 }
 
+@media screen and (max-width: 900px) {
+
+    #apertura-custom{
+
+        height: 70px;
+        width: 70px;
+    }
+}
+
 .card-chi-siamo-custom{
 
     width: 350px;
@@ -266,14 +296,43 @@ body , footer{
     justify-content: center;
     align-items: center;
 
+}
+
+@media screen and (max-width: 900px) {
+
+    .card-chi-siamo-custom{
+
+        width: 250px;
+        height: 300px;
+        
+    }
+}
 
    
 
-}
 
 .immagini-cerchio-custom{
 
     height: 200px;
     width: 200px;
+}
+
+@media screen and (max-width: 900px) {
+
+    .immagini-cerchio-custom{
+
+        height: 50px;
+        width: 50px;
+    }
+
+}
+
+@media screen and (max-width: 900px)  {
+
+    .section-chi-siamo-custom{
+
+        height: 110vh;
+    }
+    
 }
 

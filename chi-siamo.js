@@ -97,10 +97,12 @@ let team = [
         movedDiv.forEach((moved , i)=>{
 
             let angolo = (360 * i)/movedDiv.length;
-    
-            moved.style.transform = `rotate(${angolo}deg) translate(225px) rotate(-${angolo}deg) `;
 
-            aperturaCustom.innerHTML= `<i class="fa-solid fa-minus fa-5x"></i>`;
+            let raggio = circleCustom.clientWidth/2
+    
+            moved.style.transform = `rotate(${angolo}deg) translate(${raggio}px) rotate(-${angolo}deg) `;
+
+            aperturaCustom.innerHTML= `<i class="fa-solid fa-minus fa-4x"></i>`;
     
             check = true
         
@@ -114,7 +116,7 @@ let team = [
 
         moved.style.transform = `rotate(0deg) translate(0px)`;
         
-        aperturaCustom.innerHTML= `<i class="fa-solid fa-plus fa-beat-fade fa-5x"></i>`;
+        aperturaCustom.innerHTML= `<i class="fa-solid fa-plus fa-beat-fade fa-4x"></i>`;
         
         check = false
 
