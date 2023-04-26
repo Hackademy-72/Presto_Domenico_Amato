@@ -79,10 +79,10 @@ let cardWrapper = document.querySelector(`#cardWrapper`);
 let team = [
 
 
-    { name : 'Niko', languages : ['lorem ipsum dolor lorem'], url : './media/omino5.png'},
+    { name : 'Domenico', languages : ['lorem ipsum dolor lorem'], url : './media/omino5.png'},
     { name : 'Francesco', languages : ['lorem ipsum dolor lorem'], url : './media/omino2.png'},
-    { name : 'Reda', languages : ['lorem ipsum dolor lorem'], url : './media/omino3.png'},
-    { name : 'Monchy', languages : ['lorem ipsum dolor lorem'], url : './media/omino4.png'},
+    { name : 'Luigi', languages : ['lorem ipsum dolor lorem'], url : './media/omino3.png'},
+    { name : 'Andrea', languages : ['lorem ipsum dolor lorem'], url : './media/omino4.png'},
 
 
 ];
